@@ -1,0 +1,3 @@
+class OrdersController < AlllicationController
+	
+end
