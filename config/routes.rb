@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+	root to: "static_pages#contact"
 	get "/test", to: proc {|e| [200,{},["ok"]]}
 	resources :users 
   	get "/contact", to: "static_pages#contact"
